@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: grey;
+  line-height: 3em;
+}
+
+.container {
+  width: 80%;
+  margin-right: auto ;
+  margin-left: auto;
+  margin-top: 100px;
+background-color: lightgray;
+box-shadow: 10px 5px 5px whitesmoke;
+}
+
+.par1{
+font-size: 1.5em;
+text-align: center;
+font-weight: bold;
+}
+span{
+    text-transform: capitalize;
+    color: violet;
+text-decoration: line-through;
+}
+
+.par2{
+font-size: 1em;
+
+}
