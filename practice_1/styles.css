@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey;
+  box-sizing: border-box;
+  height: 1000px;
+}
+
+header{
+    margin-top: -25px;
+    width: 100%;
+    height: 25px;
+    background-color: lightgrey; 
+    position: fixed;
+}
+header > p{
+    margin: 5px;
+}
+
+.container {
+  width: 80%;
+  height: 350px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: pink;
+  
+  
+}
+
+.container1{
+background-color: pink;
+}
+.container2{
+    position: relative;
+}
+.ptag{
+    margin: 0;
+    float: right;
+}
+
+
+ .class{
+    width: 50%;
+    height: 50% ;
+    background-color: white;
+
+}
+
+.class1{
+   position: relative;
+   left: 50%;
+    
+}
+
+.class3{
+    position: absolute;
+    width: 469px;
+    height: 175px;
+    left: 468px;
+    top: 175px;
+    
+    background-color: brown;
+
+}
+
+
+.class4{
+background-color: black;
+}
