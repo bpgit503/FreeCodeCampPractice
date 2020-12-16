@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Foodie Survey</h1>
+    <p id="description"> Lorem culpa amet pariatur elit mollit dolore pariatur ad qui proident consectetur elit
+        adipisicing.</p>
+    <from id="survey-from">
+        <!-- add placeholder text within the input fields -->
+        <!-- Create dropdown field -->
+        <!-- create radio button field #13 -->
+
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+
+        <label for="email"id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <!-- validate input in email -->
+        
+        <label for="number" id="number-label">Phone Number</label>
+        <input type="text" name="number" id="number" placeholder="Phone Number" required minlength="7" maxlength="13" >
+        <!-- validate input. ONLY NUMERICAL SYMBOLS. Add range min and max -->
+
+        <label for="m/f">Select your gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">Others</label>
+
+        <label for=""></label>
+        <!-- use data list -->
+        <!-- textarea for extra comments -->
+
+        <button id="submit"></button>
+
+    </from>
+
+        
+
+
+
+</body>
+
+</html>
