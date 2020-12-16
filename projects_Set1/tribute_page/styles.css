@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
 #title{
@@ -26,7 +27,39 @@ body{
 hr{
     margin: 20px 0 ;
 }
+h2{
+    text-align: center;
+}
 
 #list{
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px black solid;
+    width: 50%;
+    
+    list-style-type: none;
+}
+.emph{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    background-color: lightgrey;
+    
+}
+.list-items{
+    margin-bottom: 15px ;
+}
 
+h3{
+    text-align: center;
+}
+#tribute-link{
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
