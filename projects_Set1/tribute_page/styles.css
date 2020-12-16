@@ -12,13 +12,13 @@ body{
 }
 
 #img-div{
-    
+    text-align: center;
     
 }
 
 #image{
-    width: 80%;
     
+    max-width: 80%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -54,7 +54,7 @@ h2{
 h3{
     text-align: center;
 }
-#tribute-link{
+#tribute-div{
     text-align: center;
     margin: 0 auto 20px;
 }
