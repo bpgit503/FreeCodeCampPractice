@@ -9,45 +9,88 @@
 </head>
 
 <body>
-    <h1 id="title">Foodie Survey</h1>
-    <p id="description"> Lorem culpa amet pariatur elit mollit dolore pariatur ad qui proident consectetur elit
-        adipisicing.</p>
-    <from id="survey-from">
-        <!-- add placeholder text within the input fields -->
-        <!-- Create dropdown field -->
-        <!-- create radio button field #13 -->
+    <div class="container">
+        <header>
+            <h1 id="title">Lighty Stuffed Restaurant</h1>
+            <p id="description"> Fill up the survey form below for feedback and suggestions for our services</p>
+        </header>
 
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <form id="survey-form">
 
-        <label for="email"id="email-label">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email">
-        <!-- validate input in email -->
-        
-        <label for="number" id="number-label">Phone Number</label>
-        <input type="text" name="number" id="number" placeholder="Phone Number" required minlength="7" maxlength="13" >
-        <!-- validate input. ONLY NUMERICAL SYMBOLS. Add range min and max -->
+            <!-- name -->
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" class="block" placeholder="Enter your name" required>
 
-        <label for="m/f">Select your gender</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" id="others" name="gender" value="others">
-        <label for="others">Others</label>
+            <!-- email -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" class="block" placeholder="Enter your email" required>
+            <!-- validate input in email -->
 
-        <label for=""></label>
-        <!-- use data list -->
-        <!-- textarea for extra comments -->
+            <!-- contact number -->
+            <label for="number" id="number-label">Phone Number</label>
+            <input type="number" name="number" id="number" class="block" placeholder="Phone Number" required min="7"
+                max="13">
+            <!-- validate input. ONLY NUMERICAL SYMBOLS. Add range min and max -->
 
-        <button id="submit"></button>
+            <div class="spaceBetween">
+                <!-- Gender radio button -->
+                <label for="gender" class="block labelName">Select your gender</label>
+                <label for="male" class="block">
+                    <input type="radio" id="male" name="gender" value="male">
+                    Male</label>
+                <label for="female" class="block">
+                    <input type="radio" id="female" name="gender" value="female">
+                    Female</label>
+                <label for="others" class="block">
+                    <input type="radio" id="others" name="gender" value="others">
+                    Others</label>
+            </div>
 
-    </from>
+            <div class="spaceBetween">
+                <!-- to be improved checklist -->
+                <label for="to-be-improved" id="checklist" class="block labelName">What aspects do you think we should
+                    improve on?</label>
+                <label for="breakfast" class="block">
+                    <input type="checkbox" id="breakfast" name="to-be-improved" value="breakfast">
+                    Breakfast</label>
+                <label for="lunch" class="block">
+                    <input type="checkbox" id="lunch" name="to-be-improved" value="lunch">
+                    Lunch</label>
+                <label for="dinner" class="block">
+                    <input type="checkbox" id="dinner" name="to-be-improved" value="dinner">
+                    Dinner</label>
+                <label for="onsite-services" class="block">
+                    <input type="checkbox" id="onsite-services" name="to-be-improved" value="onsite-services">
+                    On-site Services</label>
+                <label for="oncall-service" class="block">
+                    <input type="checkbox" id="oncall-service" name="to-be-improved" value="oncall-service">
+                    On-call Services</label>
+                <label for="delivery" class="block">
+                    <input type="checkbox" id="delivery" name="to-be-improved" value="delivery">
+                    Delivery</label>
+            </div>
 
-        
-
-
-
+            <div class="spaceBetween">
+                <!--  prefered time to eat datalist/dropdown -->
+                <label for="dropdown" class="block labelName">What time of day do you most enjoy eating at the
+                    restaurant?</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                </select>
+            </div>
+            <div>
+                <!-- textarea for extra comments -->
+                <label for="comments" class="block labelName">Other feedback or comments you would like to add?</label>
+                <textarea name="comments" id="comments" class="block" cols="30" rows="10"
+                    placeholder="Enter your extra comments"></textarea>
+                <div id="btn">
+                    <button type="submit" value=" survey-from" id="submit" onclick="alert('Submitted')">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

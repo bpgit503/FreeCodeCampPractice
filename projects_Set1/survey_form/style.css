@@ -1,3 +1,95 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1.25em;
+  background-color: #ede7f6;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125em auto 0 auto;
+  border-radius: 5px;
+}
+
+header {
+  text-align: center;
+  display: block;
+  background-image: url(cookies.jpg);
+  background-size:800px;
+  color: #c92c78;
+  opacity: .9;
+  border-radius: inherit;
+  
+}
+
 #title{
-    color: red;
+    margin-bottom: .2em;
+}
+#description    {
+    color: white;
+    margin-bottom:0 ;
+}
+
+
+#title {
+  font-size: 3em;
+}
+
+#survey-form {
+  display: block;
+  border: black 1px solid;
+  border-radius: inherit;
+  padding: 3em;
+  background-color: #fcf9f5;
+  border-radius: inherit;
+}
+
+
+label {
+ margin-bottom: .5em;
+}
+input, select, textarea, #submit{
+    border-radius: 5px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#timeOfDay {
+  margin: .5em 0 1em;
+  width: 100%;
+}
+
+.block {
+  display: block;
+}
+.spaceBetween {
+  margin-bottom: 1em;
+}
+
+#comments {
+  width: 100%;
+}
+
+#submit {
+  /* text-align: center; */
+  width: 100%;
+  margin-top: 2em;
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+/* Media query */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
 }
