@@ -51,7 +51,6 @@
 // console.log(myArray);
 
 function sum(arr, n) {
-    debugger;
     // Only change code below this line
   if(n<=0){
     console.log("Dis is n: " + n);
